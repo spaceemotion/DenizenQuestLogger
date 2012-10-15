@@ -1,0 +1,44 @@
+name: DenizenQuestLogger
+main: com.spaceemotion.denizenquestlogger.DenizenQuestLoggerPlugin
+version: 1.0
+author: SpaceEmotion
+
+permissions:
+  denizenquestlogger.*:
+    description: All permissions
+    children:
+      denizenquestlogger.help: true
+      denizenquestlogger.list: true
+      denizenquestlogger.show: true
+      denizenquestlogger.admin: true
+      
+  denizenquestlogger.user:
+    description: All user permissions
+    children:
+      denizenquestlogger.help: true
+      denizenquestlogger.list: true
+      denizenquestlogger.show: true
+      denizenquestlogger.admin: false
+
+  denizenquestlogger.help:
+    description: Help permission node
+    default: true
+
+  denizenquestlogger.list:
+    description: List permission node
+    default: true
+
+  denizenquestlogger.show:
+    description: Show permission node
+    default: true
+    
+  denizenquestlogger.admin:
+    description: Admin permissions
+    default: op
+
+commands:
+  pfa:
+    description: DenizenQuestLogger Main command
+    usage: /<command> help
+    permission: DenizenQuestLogger.help
+    aliases: ["quest","quests", "qlp", "qlog"]

@@ -1,0 +1,12 @@
+language:
+  prefix: "&6[QUEST] "
+  reload: "Konfigurationsdateien wurden neu geladen!"
+  
+  # List command strings
+  list.found: "%0 Quests gefunden:"
+  list.format: "&6%NUMBER%. &f%NAME% at %LOCATION% &6(Price: &f%PRICE%&6)"
+  list.empty: "Noch keine Quests erhalten"
+  
+  # Error strings
+  error.commandnotfound: "Befehl  nicht gefunden: &4%0"
+  error.nopermission: "You do not have the permission to execute this command!"
